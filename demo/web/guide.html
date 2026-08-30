@@ -1,0 +1,29 @@
+<aside id="judgeGuide" class="judge-guide" aria-labelledby="guideTitle">
+  <div class="guide-topline">
+    <span>Judge walkthrough</span>
+    <button id="closeGuide" class="guide-close" type="button" title="Close walkthrough" aria-label="Close walkthrough">&#215;</button>
+  </div>
+  <p class="guide-time">Five steps. About 90 seconds.</p>
+  <nav id="guideSteps" class="guide-steps" aria-label="Walkthrough steps">
+    <button type="button" data-step="0" aria-label="Step 1: The handoff" aria-current="step">1</button>
+    <button type="button" data-step="1" aria-label="Step 2: What changed">2</button>
+    <button type="button" data-step="2" aria-label="Step 3: Verify files">3</button>
+    <button type="button" data-step="3" aria-label="Step 4: Test corruption">4</button>
+    <button type="button" data-step="4" aria-label="Step 5: Take it with you">5</button>
+  </nav>
+  <h2 id="guideTitle" tabindex="-1">A handoff that carries its own proof</h2>
+  <p id="guideDescription">The sender prepares a folder once. The receiver gets the files, a record of changes, and an integrity verifier in one HTML file. No receiver app to install.</p>
+  <p id="guideDetail" class="guide-detail">This is a public, synthetic sample. No login, access code, or upload is needed.</p>
+  <button id="guideAction" class="guide-action" type="button">Show the sample files</button>
+  <p id="guideOutcome" class="guide-outcome" role="status" aria-live="polite"></p>
+  <div class="guide-navigation">
+    <button id="guidePrevious" type="button" disabled>Previous</button>
+    <span id="guideCount">1 of 5</span>
+    <button id="guideNext" type="button">Next</button>
+  </div>
+  <div class="guide-checks" aria-label="Checks performed in this session">
+    <span id="guideVerified">Files: not checked</span>
+    <span id="guideTampered">One-byte test: not run</span>
+  </div>
+  <p class="guide-boundary">Matching hashes prove consistency, not malware safety or sender identity.</p>
+</aside>

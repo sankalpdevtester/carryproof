@@ -1,0 +1,13 @@
+CarryProof zero-dependency proof
+=================================
+Python: 3.12.10
+Manifest: requirements.txt is empty
+Runtime imports (36): argparse, base64, bz2, collections, contextlib, csv, dataclasses, datetime, gzip, hashlib, hmac, html, http, io, json, lzma, mimetypes, os, pathlib, re, secrets, shutil, socket, stat, struct, sys, tarfile, tempfile, threading, time, typing, urllib, webbrowser, xml, zipfile, zlib
+Import classification: every runtime import is in sys.stdlib_module_names
+Third-party runtime imports: 0
+
+Reproducible build
+Build 1 SHA-256: 04a83207950a17d3be7b18b36953b28ce728f3a3253fe941e01f1c758918e185
+Build 2 SHA-256: 04a83207950a17d3be7b18b36953b28ce728f3a3253fe941e01f1c758918e185
+Byte-identical: yes
+Artifact: dist/carryproof.pyz

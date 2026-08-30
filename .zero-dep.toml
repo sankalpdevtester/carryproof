@@ -1,0 +1,4 @@
+track = "E"
+pitch = "One offline file carries prepared documents, their change record, and the recipient's integrity verifier. No third-party packages."
+build = "python build.py"
+run = "python dist/carryproof.pyz --help"

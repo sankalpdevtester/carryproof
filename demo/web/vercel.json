@@ -1,0 +1,32 @@
+{
+  "framework": null,
+  "buildCommand": "",
+  "installCommand": "",
+  "outputDirectory": ".",
+  "cleanUrls": false,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {"key": "X-Content-Type-Options", "value": "nosniff"},
+        {"key": "Referrer-Policy", "value": "no-referrer"},
+        {"key": "X-Frame-Options", "value": "DENY"},
+        {"key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()"},
+        {"key": "Content-Security-Policy", "value": "default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; media-src blob:; connect-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"}
+      ]
+    },
+    {
+      "source": "/sample.carryproof.html",
+      "headers": [
+        {"key": "Content-Disposition", "value": "attachment; filename=sample.carryproof.html"}
+      ]
+    },
+    {
+      "source": "/carryproof.pyz",
+      "headers": [
+        {"key": "Content-Type", "value": "application/octet-stream"},
+        {"key": "Content-Disposition", "value": "attachment; filename=carryproof.pyz"}
+      ]
+    }
+  ]
+}

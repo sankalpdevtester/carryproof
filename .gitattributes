@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.pyz binary
+*.zip binary
+*.cproof binary
+*.png binary
+*.jpg binary

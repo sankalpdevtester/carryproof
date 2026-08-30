@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+dist/
+demo/generated/
+.coverage
+carryproof-report.json
+carryproof-report.html
+*-carryproof/
+.vercel/
+.env
+.env.*
+*.log
+*.tmp

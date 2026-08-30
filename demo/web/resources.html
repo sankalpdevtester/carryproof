@@ -1,0 +1,27 @@
+<section id="demoResources" class="demo-resources" aria-labelledby="resourcesTitle">
+  <div class="section-head"><div><h2 id="resourcesTitle">Take the handoff with you</h2></div></div>
+  <div class="resource-links">
+    <a href="sample.carryproof.html" download>Offline capsule <span>HTML, includes files + verifier</span></a>
+    <a href="sample.carryproof.zip" download>ZIP bundle <span>Prepared files + manifest + report</span></a>
+    <a href="sample.carryproof.zip.cproof" download>Recovery data <span>One bad chunk per stripe</span></a>
+    <a href="carryproof.pyz" download>CarryProof executable <span>Python 3.11+, no pip install</span></a>
+  </div>
+  <div class="resource-meta">
+    <a href="report.html">Interactive before / after</a>
+    <a href="report.json" download>JSON report</a>
+    <a href="SHA256SUMS.txt">Download checksums</a>
+    <a href="__REPOSITORY__" target="_blank" rel="noopener noreferrer">Source &amp; documentation</a>
+  </div>
+  <details class="demo-cli">
+    <summary>Run the complete workflow on your own folder</summary>
+    <pre><code>python carryproof.pyz prepare path/to/files
+python carryproof.pyz verify sample.carryproof.html
+python carryproof.pyz recover damaged.zip sample.carryproof.zip.cproof</code></pre>
+    <p>The website demonstrates the real browser verifier on prebuilt sample files. Inspection, sanitization, ZIP verification, recovery, and private LAN sharing run locally with Python.</p>
+  </details>
+  <details class="demo-fixtures">
+    <summary>What the sample contains</summary>
+    <p>Six generated fixtures: two identical text files, a text note containing reserved example identifiers, a tiny valid PNG, and synthetic JPEG/Office parser fixtures. The JPEG is not a viewable photograph and the Office fixture is not a complete editable document. They demonstrate metadata and active-content detection, not full format compatibility.</p>
+    <p>Use a text-file Download button to test extraction. No real private documents, working macros, or personal data are hosted. Preparation leaves the source files unchanged; unresolved findings remain visible.</p>
+  </details>
+</section>
