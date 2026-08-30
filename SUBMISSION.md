@@ -84,6 +84,8 @@ Verification on August 30, 2026 used Windows and Python 3.12.10:
 - Browser checks on localhost: public demo-code entry, individual download, all-payload verification, one-byte rejection, fingerprints, and original/prepared report switching pass.
 - Public HTTPS demo: anonymous access and byte-for-byte checks pass for the guided page, report, capsule, ZIP, recovery data, Python executable, and checksums. Environment files, hosting metadata, and Git configuration return 404.
 - Guided tour: first-load help, replay/close, five step controls, real verification, one-byte rejection, and report navigation pass on desktop and narrow mobile layouts.
+- Hosted walkthrough: verification, one-byte rejection, and verified text-file download also pass on the public HTTPS deployment.
+- Fresh unauthenticated GitHub clone: all 46 tests pass with site-packages disabled; the demo builder produces the same eight published artifact hashes.
 - Layout checks: 1440x900 desktop, 390x844 phone, and 320x740 narrow phone; no detected page or capsule-control overflow after fixes. No browser console warnings/errors during the checked capsule flow.
 - Direct downloaded-file launch was not browser-tested because the embedded browser did not permit local-file navigation. Localhost testing is not evidence of offline launch; complete the manual check below before recording that claim.
 
@@ -102,6 +104,6 @@ These checks use synthetic fixtures and do not establish comprehensive format co
 - [ ] Open the downloaded capsule offline in the intended judge browser and verify/extract a payload
 - [x] Public hosted demo with an automatic judge walkthrough
 - [ ] Replace video, team, and contact placeholders above
-- [ ] Push a public GitHub repository
+- [x] Push a public GitHub repository
 - [ ] Record and publish the five-minute demo
 - [ ] Submit before August 31, 2026 at 18:00 UTC
